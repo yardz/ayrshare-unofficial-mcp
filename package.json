@@ -1,0 +1,40 @@
+{
+	"name": "ayrshare-unofficial-mcp",
+	"version": "1.0.3",
+	"description": "Unofficial MCP server for the Ayrshare social media API. Enables AI agents to publish posts, manage profiles, upload media, handle comments, send messages, view analytics, and configure auto-scheduling.",
+	"type": "module",
+	"bin": {
+		"ayrshare-unofficial-mcp": "build/index.js"
+	},
+	"main": "./build/index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node build/index.js",
+		"dev": "tsc --watch"
+	},
+	"keywords": [
+		"mcp",
+		"ayrshare",
+		"social-media",
+		"model-context-protocol",
+		"ai",
+		"automation"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yardz/ayrshare-unofficial-mcp"
+	},
+	"author": "Bruno Motta",
+	"license": "MIT",
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.27.0",
+		"zod": "^3.25.0"
+	},
+	"devDependencies": {
+		"typescript": "^5.7.0",
+		"@types/node": "^22.0.0"
+	}
+}
